@@ -421,7 +421,7 @@ def start_forward(udid):
 
 def start_appium():
     print("STARTING APPIUM")
-    launch("appium", ["appium"], live=True, sink=state.log_appium)
+    launch("appium", ["appium", "--use-plugins=inspector"], live=True, sink=state.log_appium)
     wait(5)
     print("APPIUM STARTED @ http://localhost:4723")
 
