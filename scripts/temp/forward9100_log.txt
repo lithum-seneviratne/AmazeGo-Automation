@@ -1,0 +1,2 @@
+{"time":"2026-08-25T22:13:50.2057027-04:00","level":"INFO","msg":"start listening, forwarding to device","module":"go-ios/forward","udid":"00008140-001130441A2A801C","hostPort":9100,"phonePort":9100}
+{"time":"2026-08-25T22:13:50.207229-04:00","level":"ERROR","msg":"failed to forward port","err":"forward: failed listener with err: listen tcp 0.0.0.0:9100: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."}

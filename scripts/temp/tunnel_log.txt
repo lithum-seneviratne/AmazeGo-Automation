@@ -1,0 +1,10 @@
+{"time":"2026-08-25T22:13:41.0791383-04:00","level":"WARN","msg":"go-ios agent is not running. You might need to start it with 'ios tunnel start' for ios17+. Use ENABLE_GO_IOS_AGENT=user for userspace tunnel or ENABLE_GO_IOS_AGENT=kernel for kernel tunnel for the experimental daemon mode."}
+{"time":"2026-08-25T22:13:41.0820712-04:00","level":"INFO","msg":"no udid specified using first device in list","module":"go-ios","udid":"00008140-001130441A2A801C"}
+{"time":"2026-08-25T22:13:41.085073-04:00","level":"INFO","msg":"Tunnel server started"}
+{"time":"2026-08-25T22:13:42.0890634-04:00","level":"INFO","msg":"start tunnel","module":"go-ios/tunnel","udid":"00008140-001130441A2A801C"}
+{"time":"2026-08-25T22:13:42.1828066-04:00","level":"INFO","msg":"connect to lockdown tunnel endpoint on device","module":"go-ios/tunnel","udid":"00008140-001130441A2A801C"}
+{"time":"2026-08-25T22:13:42.6092137-04:00","level":"INFO","msg":"Using existing driver 0.14"}
+{"time":"2026-08-25T22:13:42.6433219-04:00","level":"INFO","msg":"Creating adapter"}
+{"time":"2026-08-25T22:13:43.2998092-04:00","level":"INFO","msg":"windows cmd","module":"go-ios/tunnel","cmd":"C:\\windows\\system32\\netsh.exe interface ipv6 set address tun0 fd3f:99d2:663b::2/64"}
+{"time":"2026-08-25T22:13:43.2998092-04:00","level":"INFO","msg":"tun wrapper initialized","module":"go-ios/tunnel","batchSize":1,"mtu":1280}
+{"time":"2026-08-25T22:13:43.3315643-04:00","level":"INFO","msg":"Removed orphaned adapter \"tun0 1\""}
