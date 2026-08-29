@@ -43,16 +43,29 @@ def get_mask(hsvBoard):
 
 def get_pieces(mask):
     i, labels, stats, centroids = cv2.connectedComponentsWithStats(mask, connectivity=8, ltype=cv2.CV_32S)
-    return i
+    return i-1, labels, stats, centroids
 
 board, hsvBoard = get_board()
 mask = get_mask(hsvBoard)
-
 pieces = get_pieces(mask)
 
-print(pieces)
+def find_arrowheads(pieces):
+    numPieces, labels, _, _ = pieces
 
-cv2.imshow("Board", hsvBoard)
-cv2.imshow("Mask", mask)
-cv2.waitKey(0)
-cv2.destroyAllWindows
+    distTrans = cv2.distanceTransform(mask, distanceType=cv2.DIST_L2, maskSize=5)
+
+    arrowheads = []
+
+    for i in range(1, numPieces + 1):
+        componentDist = np.where(labels == i, distTrans, 0.0)
+        maxVal = np.max(componentDist)
+        matchingY, matchingX = np.where(componentDist == maxVal)
+
+        peakY = matchingY[0]
+        peakX = matchingX[0]
+
+        arrowheads.append((peakX, peakY))
+
+    return arrowheads
+
+print(f"Detected {len(find_arrowheads(pieces))} arrowheads.")
