@@ -1,0 +1,2 @@
+{"time":"2026-08-29T16:01:01.7600672-04:00","level":"INFO","msg":"no udid specified using first device in list","module":"go-ios","udid":"00008140-001130441A2A801C"}
+{"time":"2026-08-29T16:01:01.7600672-04:00","level":"INFO","msg":"start listening, forwarding to device","module":"go-ios/forward","udid":"00008140-001130441A2A801C","hostPort":8100,"phonePort":8100}
