@@ -24,22 +24,10 @@ def get_board_shape(frame):
     isColMatch = np.all(np.abs(colPxAvg - target) == 0, axis=1)
     isRowMatch = np.all(np.abs(rowPxAvg - target) == 0, axis=1)
 
-    matchingColIndicies = np.where(isColMatch)[0]
-    matchingRowIndicies = np.where(isRowMatch)[0]
+    colMax, colMin = (np.where(~isColMatch)[0]).max(), (np.where(~isColMatch)[0]).min() 
+    rowMax, rowMin = (np.where(~isRowMatch)[0]).max(), (np.where(~isRowMatch)[0]).min() 
 
-    colGaps = np.diff(matchingColIndicies)
-    maxColGapIdx = np.argmax(colGaps)
-
-    colGapIdx1 = matchingColIndicies[maxColGapIdx]
-    colGapIdx2 = matchingColIndicies[maxColGapIdx + 1]
-
-    rowGaps = np.diff(matchingRowIndicies)
-    maxRowGapIdx = np.argmax(rowGaps)
-
-    rowGapIdx1 = matchingRowIndicies[maxRowGapIdx]
-    rowGapIdx2 = matchingRowIndicies[maxRowGapIdx + 1]
-
-    return rowGapIdx1, rowGapIdx2, colGapIdx1, colGapIdx2
+    return rowMin, rowMax, colMin, colMax
 
 def get_board():
     frame = cv2.imread(str(Path(HOME_DIR) / "images" / "debug" / "Level17.png"), cv2.IMREAD_COLOR_BGR)[500:2200, 0:1206]
@@ -48,10 +36,9 @@ def get_board():
     return frame[heightMin:heightMax, widthMin:widthMax], hsv[heightMin:heightMax, widthMin:widthMax] 
 
 def get_mask(hsvBoard):
-    lower = np.array([0, 0, 241], dtype=np.uint8)
-    upper = np.array([180, 225, 241], dtype=np.uint8)
+    lower = np.array([0, 0, 202], dtype=np.uint8)
+    upper = np.array([180, 255, 255], dtype=np.uint8)
     mask = cv2.bitwise_not(cv2.inRange(hsvBoard, lower, upper))
-    result =  cv2.bitwise_and(hsvBoard, hsvBoard, mask=mask)
     return mask
 
 def get_pieces(mask):
@@ -65,7 +52,7 @@ pieces = get_pieces(mask)
 
 print(pieces)
 
-# cv2.imshow("Board", board)
-# cv2.imshow("Mask", get_mask(hsvBoard))
-# cv2.waitKey(0)
-# cv2.destroyAllWindows
+cv2.imshow("Board", hsvBoard)
+cv2.imshow("Mask", mask)
+cv2.waitKey(0)
+cv2.destroyAllWindows
