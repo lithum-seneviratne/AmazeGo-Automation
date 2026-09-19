@@ -126,9 +126,9 @@ def main():
 
     removed = []
 
-    vaildRemaining = []
-
     while len(removed) < len(original_remaining):
+        vaildRemaining = []
+        numRemoved = len(removed)
         for idx, arrow in enumerate(remaining):
             i, x, y, direction, headLength, label = arrow
             dx, dy = DIRECTIONS[direction]
@@ -146,6 +146,10 @@ def main():
             else:
                 vaildRemaining.append(arrow)
 
+        if numRemoved == len(removed):
+            cv2.imwrite(str(Path(HOME_DIR) / "images" / "debug" / "removed_mask.png"), removedMask)
+            break
+
         remaining = vaildRemaining
         mask = removedMask
 
@@ -154,6 +158,7 @@ def main():
     for r in removed:
         x, y = r
         webdriver.tap(x, y)
+        time.sleep(0.01)
 
     cv2.imwrite(str(Path(HOME_DIR) / "images" / "debug" / "removed_mask.png"), removedMask)
     cv2.imwrite(str(Path(HOME_DIR) / "images" / "debug" / "frame_debug.png"), debugFrame)

@@ -8,3 +8,7 @@
 {"time":"2026-08-29T18:52:01.1794699-04:00","level":"INFO","msg":"Removed orphaned adapter \"tun0 1\""}
 {"time":"2026-08-29T18:52:01.2169436-04:00","level":"INFO","msg":"windows cmd","module":"go-ios/tunnel","cmd":"C:\\windows\\system32\\netsh.exe interface ipv6 set address tun0 fd5a:45a4:7feb::2/64"}
 {"time":"2026-08-29T18:52:01.2169436-04:00","level":"INFO","msg":"tun wrapper initialized","module":"go-ios/tunnel","batchSize":1,"mtu":1280}
+{"time":"2026-08-29T20:56:47.6753686-04:00","level":"ERROR","msg":"failed to forward data to tunnel interface","module":"go-ios/tunnel","udid":"00008140-001130441A2A801C","error":"failed to read IPv6 header: EOF"}
+{"time":"2026-08-29T20:56:48.1429215-04:00","level":"INFO","msg":"stopping tunnel","module":"go-ios/tunnel","udid":"00008140-001130441A2A801C"}
+{"time":"2026-08-29T20:56:48.14454-04:00","level":"ERROR","msg":"failed to forward data to the device","module":"go-ios/tunnel","udid":"00008140-001130441A2A801C","error":"could not read packet. file already closed"}
+{"time":"2026-08-29T20:56:48.5042125-04:00","level":"INFO","msg":"tun device events channel closed","module":"go-ios/tunnel"}

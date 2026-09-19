@@ -33300,3 +33300,799 @@
 [38;5;205m[3ea094d9][0m[38;5;176m[XCUITestDriver@5358][0m Got response with status 200: {"value":null,"sessionId":"D0B43A0B-0D8C-4F99-90F7-8EF965F79FA1"}
 [38;5;205m[3ea094d9][0m[38;5;176m[XCUITestDriver@5358][0m Responding to client with driver.execute() result: null
 [38;5;86m[HTTP][0m <-- POST /session/3ea094d9-c393-4d1b-9ef1-b0e36ddf5d6d/execute/sync 200 322 ms - 14
+[38;5;86m[HTTP][0m Request idempotency key: 5756f569-ecaa-4dec-9f45-a9eed7de83b0
+[38;5;86m[HTTP][0m --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"appium:plugins":["ocr"],"appium:settings[mjpegServerFramerate]":60,"appium:settings[mjpegServerScreenshotQuality]":100,"appium:settings[mjpegScalingFactor]":50,"appium:newCommandTimeout":0}}}
+[38;5;77m[AppiumDriver@f904][0m Calling AppiumDriver.createSession() with args: [{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"appium:plugins":["ocr"],"appium:settings[mjpegServerFramerate]":60,"appium:settings[mjpegServerScreenshotQuality]":100,"appium:settings[mjpegScalingFactor]":50,"appium:newCommandTimeout":0}},{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"appium:plugins":["ocr"],"appium:settings[mjpegServerFramerate]":60,"appium:settings[mjpegServerScreenshotQuality]":100,"appium:settings[mjpegScalingFactor]":50,"appium:newCommandTimeout":0}},{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"a???
+[38;5;77m[AppiumDriver@f904][0m Event 'newSessionRequested' logged at 1788051054163 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;112m[Appium][0m Attempting to find matching driver for automationName 'XCUITest' and platformName 'iOS'
+[38;5;112m[Appium][0m The 'xcuitest' driver was installed and matched caps.
+[38;5;112m[Appium][0m Will require it at C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver
+[38;5;112m[Appium][0m Requiring driver at C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver\build\lib\index.js
+[38;5;77m[AppiumDriver@f904][0m Appium v3.6.0 creating new XCUITestDriver (v12.3.4) session
+[38;5;77m[AppiumDriver@f904][0m Checking BaseDriver versions for Appium and XCUITestDriver
+[38;5;77m[AppiumDriver@f904][0m Appium's BaseDriver version is 10.7.2
+[38;5;77m[AppiumDriver@f904][0m XCUITestDriver's BaseDriver version is 10.7.2
+[38;5;185m[XCUITestDriver@098e][0m 
+[38;5;185m[XCUITestDriver@098e][0m Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "iOS",
+    "appium:automationName": "XCUITest",
+    "appium:udid": "00008140-001130441A2A801C",
+    "appium:webDriverAgentUrl": "http://127.0.0.1:8100",
+    "appium:skipLogCapture": true,
+    "appium:plugins": [
+      "ocr"
+    ],
+    "appium:newCommandTimeout": 0
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+[38;5;185m[XCUITestDriver@098e][0m The following provided capabilities were not recognized by this driver:
+[38;5;185m[XCUITestDriver@098e][0m   plugins
+[38;5;185m[XCUITestDriver@098e][0m The desired capabilities include neither an app nor a bundleId. WebDriverAgent will be started without the default app
+[38;5;185m[XCUITestDriver@098e][0m 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Session created with session id: 950c7964-66fb-4f0c-8446-19ea6c06e758
+[38;5;179m[950c7964][0m[38;5;135m[XCUITest][0m Current user: 'lssen'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Skipping Simulator lookup for '00008140-001130441A2A801C' because the selected session strategy must not use macOS Simulator utilities
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Creating iDevice object with udid '00008140-001130441A2A801C'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m No platformVersion specified. Using device version: '26.6'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Determining device to run tests on: udid: '00008140-001130441A2A801C', real device: true
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Subscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d to topic 'xcuitest:sessionUdidClaimed'
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Subscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d to topic 'xcuitest:sessionUdidContended'
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Subscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d to topic 'xcuitest:sessionUdidReleased'
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m 098ea2b6-b24a-42aa-8333-7ea65329ed4d is publishing a message to topic xcuitest:sessionUdidClaimed
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m 5358884f-0f8a-4b81-80f3-668577f232c8 is publishing a message to topic xcuitest:sessionUdidContended
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Session '950c7964-66fb-4f0c-8446-19ea6c06e758' is starting on udid '00008140-001130441A2A801C', which is already in use by another session identified by 3ea094d9-c393-4d1b-9ef1-b0e36ddf5d6d. Running multiple parallel sessions on the same device is highly discouraged. Consider enabling the Appium server's '--session-override' flag and make sure to properly quit the previous session before starting a new one. Terminating the obsolete session.
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Unsubscribing 5358884f-0f8a-4b81-80f3-668577f232c8 from topic 'xcuitest:sessionUdidClaimed'
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Proxying [DELETE /session/3ea094d9-c393-4d1b-9ef1-b0e36ddf5d6d] to [DELETE http://127.0.0.1:8100/session/D0B43A0B-0D8C-4F99-90F7-8EF965F79FA1] with no body
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Got response with status 200: {"value":null,"sessionId":null}
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Stopping neither xcodebuild nor XCTest session since WDA lifecycle is not managed by this driver
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Releasing connections for 00008140-001130441A2A801C device on any port number
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Found cached connections to release: ["00008140-001130441A2A801C:8100","00008140-001130441A2A801C:9100"]
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Releasing the listener for '00008140-001130441A2A801C:9100'
+[38;5;179m[950c7964][0m[38;5;176m[XCUITestDriver@5358][0m Cached connections count: 0
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m 5358884f-0f8a-4b81-80f3-668577f232c8 is publishing a message to topic xcuitest:sessionUdidReleased
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Received release confirmation from 1 session for udid '00008140-001130441A2A801C'
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Unsubscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d from topic 'xcuitest:sessionUdidContended'
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Unsubscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d from topic 'xcuitest:sessionUdidReleased'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'xcodeDetailsRetrieved' logged at 1788051054255 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'appConfigured' logged at 1788051054255 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'resetStarted' logged at 1788051054255 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Reset: running ios real device reset flow
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'resetComplete' logged at 1788051054255 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Using WDA path: 'C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver\node_modules\appium-webdriveragent'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Using WDA agent: 'C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver\node_modules\appium-webdriveragent\WebDriverAgent.xcodeproj'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m 'skipLogCapture' is set. Skipping starting logs such as crash, system, safari console and safari network.
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Setting up real device
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Requesting connection for device 00008140-001130441A2A801C on local port 8100
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Cached connections count: 0
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Successfully requested the connection for 00008140-001130441A2A801C:8100
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Trying to start WebDriverAgent once since at least one of webDriverAgentUrl,usePreinstalledWDA capabilities is provided
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'wdaStartAttempted' logged at 1788051054256 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Selected 'existing-url' WebDriverAgent startup strategy
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Using provided WebdriverAgent at 'http://127.0.0.1:8100'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m JWProxy options: {"scheme":"http","server":"127.0.0.1","port":8100,"base":"","reqBasePath":"","sessionId":null,"keepAlive":true}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m NoSessionProxy options: {"scheme":"http","server":"127.0.0.1","port":8100,"base":"","reqBasePath":"","sessionId":null,"keepAlive":true}
+[38;5;179m[950c7964][0m[38;5;151m[WD Proxy][0m NoSessionProxy options: {"scheme":"http","server":"127.0.0.1","port":8100,"base":"","reqBasePath":"","sessionId":null,"timeout":3000}
+[38;5;179m[950c7964][0m[38;5;151m[WD Proxy][0m Matched '/status' to command name 'getStatus'
+[38;5;179m[950c7964][0m[38;5;151m[WD Proxy][0m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[38;5;179m[950c7964][0m[38;5;151m[WD Proxy][0m Got response with status 200: {"value":{"build":{"version":"16.8.0","time":"Aug 25 2026 19:09:23","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"},"os":{"testmanagerdVersion":65535,"name":"iOS","sdkVersion":"26.4","version":"26.6"},"device":"iphone","ios":{"ip":"10.137.142.243"},"message":"WebDriverAgent is ready to accept commands","state":"success","ready":true},"sessionId":null}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'wdaSessionAttempted' logged at 1788051054266 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Sending createSession command to WDA
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Matched '/session' to command name 'createSession'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":{"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC","capabilities":{"sdkVersion":"26.6","device":"iphone"}},"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Determined the downstream protocol as 'W3C'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m WDA session startup took 8ms
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'wdaSessionStarted' logged at 1788051054274 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m WebDriverAgent version: '16.8.0'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Event 'wdaStarted' logged at 1788051054275 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Forwarding MJPEG server port 9100 to local port 9100
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Requesting connection for device 00008140-001130441A2A801C on local port 9100, device port 9100
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Cached connections count: 1
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m RemoteXPC session initialization unavailable: Tunnel registry port not found. Please run the tunnel creation script first See https://appium.github.io/appium-xcuitest-driver/latest/guides/remotexpc-tunnels-real-devices/ Falling back to appium-ios-device.
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Using RemoteXPC usbmux strategy for '00008140-001130441A2A801C'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Successfully requested the connection for 00008140-001130441A2A801C:9100
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Initialized new IPC object with max object size of 1048576 bytes and max topics of 1000
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Unsubscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d from topic 'xcuitest:sessionUdidClaimed'
+[38;5;179m[950c7964][0m[38;5;123m[BaseDriver][0m Subscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d to topic 'xcuitest:sessionUdidClaimed'
+[38;5;179m[950c7964][0m[38;5;77m[AppiumDriver@f904][0m New XCUITestDriver session created successfully, session 950c7964-66fb-4f0c-8446-19ea6c06e758 added to master session list
+[38;5;179m[950c7964][0m[38;5;77m[AppiumDriver@f904][0m Applying the initial values to Appium settings parsed from W3C caps: {"mjpegServerFramerate":60,"mjpegServerScreenshotQuality":100,"mjpegScalingFactor":50}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Matched '/appium/settings' to command name 'updateSettings'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /appium/settings] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/appium/settings] with body: {"settings":{"mjpegServerFramerate":60}}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":{"snapshotMaxDepth":50,"elementResponseAttributes":"type,label","autoClickAlertSelector":"","keyboardPrediction":0,"includeCustomActionsInPageSource":false,"waitForIdleTimeout":10,"animationCoolOffTimeout":2,"keyboardAutocorrection":0,"useFirstMatch":false,"mjpegFixOrientation":false,"screenshotQuality":3,"accessibilityDeadline":0,"dismissAlertButtonSelector":"","snapshotMaxChildren":2147483647,"mjpegServerScreenshotQuality":100,"activeAppDetectionPoint":"64.00,64.00","boundElementsByIndex":false,"screenshotOrientation":"auto","enforceCustomSnapshots":false,"acceptAlertButtonSelector":"","useClearTextShortcut":true,"includeNativeAccessibilityElementInPageSource":false,"defaultActiveApplication":"auto","limitXPathContextScope":true,"reduceMotion":false,"mjpegServerFramerate":60,"shouldUseCompactResponses":true,"mjpegScalingFactor":50,"defaultAlertAction":"","includeHittableInPageSource":false,"includeMinMaxValueInPageSource":false,"respectSystemAlerts":false,"maxTypingFrequency":60,"includeNativeFram???
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Matched '/appium/settings' to command name 'updateSettings'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /appium/settings] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/appium/settings] with body: {"settings":{"mjpegServerScreenshotQuality":100}}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":{"snapshotMaxDepth":50,"elementResponseAttributes":"type,label","autoClickAlertSelector":"","keyboardPrediction":0,"includeCustomActionsInPageSource":false,"waitForIdleTimeout":10,"animationCoolOffTimeout":2,"keyboardAutocorrection":0,"useFirstMatch":false,"mjpegFixOrientation":false,"screenshotQuality":3,"accessibilityDeadline":0,"dismissAlertButtonSelector":"","snapshotMaxChildren":2147483647,"mjpegServerScreenshotQuality":100,"activeAppDetectionPoint":"64.00,64.00","boundElementsByIndex":false,"screenshotOrientation":"auto","enforceCustomSnapshots":false,"acceptAlertButtonSelector":"","useClearTextShortcut":true,"includeNativeAccessibilityElementInPageSource":false,"defaultActiveApplication":"auto","limitXPathContextScope":true,"reduceMotion":false,"mjpegServerFramerate":60,"shouldUseCompactResponses":true,"mjpegScalingFactor":50,"defaultAlertAction":"","includeHittableInPageSource":false,"includeMinMaxValueInPageSource":false,"respectSystemAlerts":false,"maxTypingFrequency":60,"includeNativeFram???
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Matched '/appium/settings' to command name 'updateSettings'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /appium/settings] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/appium/settings] with body: {"settings":{"mjpegScalingFactor":50}}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":{"snapshotMaxDepth":50,"elementResponseAttributes":"type,label","autoClickAlertSelector":"","keyboardPrediction":0,"includeCustomActionsInPageSource":false,"waitForIdleTimeout":10,"animationCoolOffTimeout":2,"keyboardAutocorrection":0,"useFirstMatch":false,"mjpegFixOrientation":false,"screenshotQuality":3,"accessibilityDeadline":0,"dismissAlertButtonSelector":"","snapshotMaxChildren":2147483647,"mjpegServerScreenshotQuality":100,"activeAppDetectionPoint":"64.00,64.00","boundElementsByIndex":false,"screenshotOrientation":"auto","enforceCustomSnapshots":false,"acceptAlertButtonSelector":"","useClearTextShortcut":true,"includeNativeAccessibilityElementInPageSource":false,"defaultActiveApplication":"auto","limitXPathContextScope":true,"reduceMotion":false,"mjpegServerFramerate":60,"shouldUseCompactResponses":true,"mjpegScalingFactor":50,"defaultAlertAction":"","includeHittableInPageSource":false,"includeMinMaxValueInPageSource":false,"respectSystemAlerts":false,"maxTypingFrequency":60,"includeNativeFram???
+[38;5;179m[950c7964][0m[38;5;77m[AppiumDriver@f904][0m Event 'newSessionStarted' logged at 1788051054300 (20:50:54 GMT-0400 (Eastern Daylight Time))
+[38;5;179m[950c7964][0m[38;5;77m[AppiumDriver@f904][0m Promoting 1 sessionless plugins to be attached to session ID 950c7964-66fb-4f0c-8446-19ea6c06e758
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Cached the protocol value 'W3C' for the new session 950c7964-66fb-4f0c-8446-19ea6c06e758
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","automationName":"XCUITest","udid":"00008140-001130441A2A801C","webDriverAgentUrl":"http://127.0.0.1:8100","skipLogCapture":true,"plugins":["ocr"],"newCommandTimeout":0,"platformVersion":"26.6"}}
+[38;5;86m[HTTP][0m <-- POST /session 200 138 ms - 490
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> GET /session/950c7964-66fb-4f0c-8446-19ea6c06e758/screenshot 
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.getScreenshot() with args: ["950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'getScreenshot'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Taking screenshot with WDA
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Matched '/screenshot' to command name 'getScreenshot'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/screenshot] with no body
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":"iVBORw0KGgoAAAANSUhEUgAABLYAAAo+CAIAAAAd2FoqAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAABLagAwAEAAAAAQAACj4AAAAAILY37gAAAAlwSFlzAAALEwAACxMBAJqcGAAAABxpRE9UAAAAAgAAAAAAAAUfAAAAKAAABR8AAAUfAAHTpr1rUWgAAEAASURBVHgB7L2Hdx3Jda/rd/2u7Xuvw5UtyVm29RwkW5ajLMnyWLKlkaw4mhykGXJmOJnDYc4Ec0QgSBAASZAgMpEDkXMGDnIGExgmB02Q/oP3w3S72ejuExAJHH5r9cKq06iurvq6DlC/3rv2/qXxX1zngAAEIAABCEAAAhCAAAQgAAEIiMAvQQECEIAABCAAAQhAAAIQgAAEIGAQQCJiRIUABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAAAIQgIBJAInIVIAABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAA???
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABLYAAAo+CAIAAAAd2FoqAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAABLagAwAEAAAAAQAACj4AAAAAILY37gAAAAlwSFlzAAALEwAACxMBAJqcGAAAABxpRE9UAAAAAgAAAAAAAAUfAAAAKAAABR8AAAUfAAHTpr1rUWgAAEAASURBVHgB7L2Hdx3Jda/rd/2u7Xuvw5UtyVm29RwkW5ajLMnyWLKlkaw4mhykGXJmOJnDYc4Ec0QgSBAASZAgMpEDkXMGDnIGExgmB02Q/oP3w3S72ejuExAJHH5r9cKq06iurvq6DlC/3rv2/qXxX1zngAAEIAABCEAAAhCAAAQgAAEIiMAvQQECEIAABCAAAQhAAAIQgAAEIGAQQCJiRIUABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAAAIQgIBJAInIVIAABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAAAIQgIBJAI???
+[38;5;86m[HTTP][0m <-- GET /session/950c7964-66fb-4f0c-8446-19ea6c06e758/screenshot 200 129 ms - 275384
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.0","y":"220.33333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.0","y":"220.33333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.0","y":"220.33333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 660 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"66.33333333333333","y":"220.33333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"66.33333333333333","y":"220.33333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"66.33333333333333","y":"220.33333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 425 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"301.6666666666667","y":"220.33333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"301.6666666666667","y":"220.33333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"301.6666666666667","y":"220.33333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 413 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.666666666666664","y":"353.6666666666667"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.666666666666664","y":"353.6666666666667"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.666666666666664","y":"353.6666666666667"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 421 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.666666666666664","y":"404.3333333333333"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.666666666666664","y":"404.3333333333333"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.666666666666664","y":"404.3333333333333"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 441 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"343.0","y":"412.6666666666667"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"343.0","y":"412.6666666666667"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"343.0","y":"412.6666666666667"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 405 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"343.0","y":"505.3333333333333"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"343.0","y":"505.3333333333333"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"343.0","y":"505.3333333333333"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 539 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.666666666666664","y":"530.3333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.666666666666664","y":"530.3333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.666666666666664","y":"530.3333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 412 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.666666666666664","y":"539.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.666666666666664","y":"539.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.666666666666664","y":"539.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 522 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.666666666666664","y":"597.6666666666666"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.666666666666664","y":"597.6666666666666"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.666666666666664","y":"597.6666666666666"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 408 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"58.0","y":"672.3333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.0","y":"672.3333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"58.0","y":"672.3333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 409 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"75.66666666666667","y":"219.33333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"75.66666666666667","y":"219.33333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"75.66666666666667","y":"219.33333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 410 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"84.0","y":"227.66666666666666"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"84.0","y":"227.66666666666666"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"84.0","y":"227.66666666666666"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 414 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"259.6666666666667","y":"228.66666666666666"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"259.6666666666667","y":"228.66666666666666"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"259.6666666666667","y":"228.66666666666666"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 403 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"66.33333333333333","y":"237.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"66.33333333333333","y":"237.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"66.33333333333333","y":"237.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 430 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"75.66666666666667","y":"236.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"75.66666666666667","y":"236.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"75.66666666666667","y":"236.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 405 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"92.33333333333333","y":"236.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"92.33333333333333","y":"236.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"92.33333333333333","y":"236.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 395 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"108.33333333333333","y":"237.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"108.33333333333333","y":"237.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"108.33333333333333","y":"237.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 768 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"245.33333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"245.33333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"91.33333333333333","y":"245.33333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 423 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"276.6666666666667","y":"245.33333333333334"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"276.6666666666667","y":"245.33333333333334"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"276.6666666666667","y":"245.33333333333334"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 424 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"268.0","y":"253.66666666666666"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"268.0","y":"253.66666666666666"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"268.0","y":"253.66666666666666"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 423 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"75.66666666666667","y":"269.6666666666667"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"75.66666666666667","y":"269.6666666666667"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"75.66666666666667","y":"269.6666666666667"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 408 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"287.3333333333333"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"287.3333333333333"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"91.33333333333333","y":"287.3333333333333"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 437 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"100.0","y":"312.6666666666667"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"100.0","y":"312.6666666666667"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"100.0","y":"312.6666666666667"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 552 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"83.0","y":"321.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"83.0","y":"321.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"83.0","y":"321.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 538 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"309.3333333333333","y":"421.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"309.3333333333333","y":"421.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"309.3333333333333","y":"421.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 427 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"317.6666666666667","y":"412.6666666666667"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"317.6666666666667","y":"412.6666666666667"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"317.6666666666667","y":"412.6666666666667"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 365 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"75.66666666666667","y":"538.6666666666666"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"75.66666666666667","y":"538.6666666666666"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"75.66666666666667","y":"538.6666666666666"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 411 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"84.0","y":"656.6666666666666"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"84.0","y":"656.6666666666666"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"84.0","y":"656.6666666666666"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 422 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"338.0"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"338.0"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"91.33333333333333","y":"338.0"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 438 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"74.66666666666667","y":"287.3333333333333"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"74.66666666666667","y":"287.3333333333333"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"74.66666666666667","y":"287.3333333333333"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 435 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"74.66666666666667","y":"346.3333333333333"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"74.66666666666667","y":"346.3333333333333"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"74.66666666666667","y":"346.3333333333333"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 534 ms - 14
+[38;5;179m[950c7964][0m[38;5;86m[HTTP][0m --> POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync {"script":"mobile: tap","args":[{"x":"109.33333333333333","y":"345.3333333333333"}]}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"109.33333333333333","y":"345.3333333333333"}],"950c7964-66fb-4f0c-8446-19ea6c06e758"]
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Executing command 'execute'
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC/wda/tap] with body: {"x":"109.33333333333333","y":"345.3333333333333"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":"F07A669A-8EA2-4748-91AF-897FE53880AC"}
+[38;5;179m[950c7964][0m[38;5;185m[XCUITestDriver@098e][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/950c7964-66fb-4f0c-8446-19ea6c06e758/execute/sync 200 426 ms - 14
+[38;5;86m[HTTP][0m Request idempotency key: 2bd90ba4-d51d-4ba1-9046-6f1d38846f57
+[38;5;86m[HTTP][0m --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"appium:plugins":["ocr"],"appium:settings[mjpegServerFramerate]":60,"appium:settings[mjpegServerScreenshotQuality]":100,"appium:settings[mjpegScalingFactor]":50,"appium:newCommandTimeout":0}}}
+[38;5;77m[AppiumDriver@f904][0m Calling AppiumDriver.createSession() with args: [{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"appium:plugins":["ocr"],"appium:settings[mjpegServerFramerate]":60,"appium:settings[mjpegServerScreenshotQuality]":100,"appium:settings[mjpegScalingFactor]":50,"appium:newCommandTimeout":0}},{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"appium:plugins":["ocr"],"appium:settings[mjpegServerFramerate]":60,"appium:settings[mjpegServerScreenshotQuality]":100,"appium:settings[mjpegScalingFactor]":50,"appium:newCommandTimeout":0}},{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:udid":"00008140-001130441A2A801C","appium:webDriverAgentUrl":"http://127.0.0.1:8100","appium:skipLogCapture":true,"a???
+[38;5;77m[AppiumDriver@f904][0m Event 'newSessionRequested' logged at 1788051091216 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;112m[Appium][0m Attempting to find matching driver for automationName 'XCUITest' and platformName 'iOS'
+[38;5;112m[Appium][0m The 'xcuitest' driver was installed and matched caps.
+[38;5;112m[Appium][0m Will require it at C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver
+[38;5;112m[Appium][0m Requiring driver at C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver\build\lib\index.js
+[38;5;77m[AppiumDriver@f904][0m Appium v3.6.0 creating new XCUITestDriver (v12.3.4) session
+[38;5;77m[AppiumDriver@f904][0m Checking BaseDriver versions for Appium and XCUITestDriver
+[38;5;77m[AppiumDriver@f904][0m Appium's BaseDriver version is 10.7.2
+[38;5;77m[AppiumDriver@f904][0m XCUITestDriver's BaseDriver version is 10.7.2
+[38;5;85m[XCUITestDriver@e290][0m 
+[38;5;85m[XCUITestDriver@e290][0m Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "iOS",
+    "appium:automationName": "XCUITest",
+    "appium:udid": "00008140-001130441A2A801C",
+    "appium:webDriverAgentUrl": "http://127.0.0.1:8100",
+    "appium:skipLogCapture": true,
+    "appium:plugins": [
+      "ocr"
+    ],
+    "appium:newCommandTimeout": 0
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+[38;5;85m[XCUITestDriver@e290][0m The following provided capabilities were not recognized by this driver:
+[38;5;85m[XCUITestDriver@e290][0m   plugins
+[38;5;85m[XCUITestDriver@e290][0m The desired capabilities include neither an app nor a bundleId. WebDriverAgent will be started without the default app
+[38;5;85m[XCUITestDriver@e290][0m 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Session created with session id: 15322aa3-4459-4717-8f38-d73c6125e237
+[38;5;166m[15322aa3][0m[38;5;135m[XCUITest][0m Current user: 'lssen'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Skipping Simulator lookup for '00008140-001130441A2A801C' because the selected session strategy must not use macOS Simulator utilities
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Creating iDevice object with udid '00008140-001130441A2A801C'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m No platformVersion specified. Using device version: '26.6'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Determining device to run tests on: udid: '00008140-001130441A2A801C', real device: true
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Subscribing e290d3f4-de4a-4805-b613-35deb180a9a0 to topic 'xcuitest:sessionUdidClaimed'
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Subscribing e290d3f4-de4a-4805-b613-35deb180a9a0 to topic 'xcuitest:sessionUdidContended'
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Subscribing e290d3f4-de4a-4805-b613-35deb180a9a0 to topic 'xcuitest:sessionUdidReleased'
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m e290d3f4-de4a-4805-b613-35deb180a9a0 is publishing a message to topic xcuitest:sessionUdidClaimed
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m 098ea2b6-b24a-42aa-8333-7ea65329ed4d is publishing a message to topic xcuitest:sessionUdidContended
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Session '15322aa3-4459-4717-8f38-d73c6125e237' is starting on udid '00008140-001130441A2A801C', which is already in use by another session identified by 950c7964-66fb-4f0c-8446-19ea6c06e758. Running multiple parallel sessions on the same device is highly discouraged. Consider enabling the Appium server's '--session-override' flag and make sure to properly quit the previous session before starting a new one. Terminating the obsolete session.
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Unsubscribing 098ea2b6-b24a-42aa-8333-7ea65329ed4d from topic 'xcuitest:sessionUdidClaimed'
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Proxying [DELETE /session/950c7964-66fb-4f0c-8446-19ea6c06e758] to [DELETE http://127.0.0.1:8100/session/F07A669A-8EA2-4748-91AF-897FE53880AC] with no body
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Got response with status 200: {"value":null,"sessionId":null}
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Stopping neither xcodebuild nor XCTest session since WDA lifecycle is not managed by this driver
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Releasing connections for 00008140-001130441A2A801C device on any port number
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Found cached connections to release: ["00008140-001130441A2A801C:8100","00008140-001130441A2A801C:9100"]
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Releasing the listener for '00008140-001130441A2A801C:9100'
+[38;5;166m[15322aa3][0m[38;5;185m[XCUITestDriver@098e][0m Cached connections count: 0
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m 098ea2b6-b24a-42aa-8333-7ea65329ed4d is publishing a message to topic xcuitest:sessionUdidReleased
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Received release confirmation from 1 session for udid '00008140-001130441A2A801C'
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Unsubscribing e290d3f4-de4a-4805-b613-35deb180a9a0 from topic 'xcuitest:sessionUdidContended'
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Unsubscribing e290d3f4-de4a-4805-b613-35deb180a9a0 from topic 'xcuitest:sessionUdidReleased'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'xcodeDetailsRetrieved' logged at 1788051091303 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'appConfigured' logged at 1788051091303 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'resetStarted' logged at 1788051091303 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Reset: running ios real device reset flow
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'resetComplete' logged at 1788051091303 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Using WDA path: 'C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver\node_modules\appium-webdriveragent'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Using WDA agent: 'C:\Users\lssen\.appium\node_modules\appium-xcuitest-driver\node_modules\appium-webdriveragent\WebDriverAgent.xcodeproj'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m 'skipLogCapture' is set. Skipping starting logs such as crash, system, safari console and safari network.
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Setting up real device
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Requesting connection for device 00008140-001130441A2A801C on local port 8100
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Cached connections count: 0
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Successfully requested the connection for 00008140-001130441A2A801C:8100
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Trying to start WebDriverAgent once since at least one of webDriverAgentUrl,usePreinstalledWDA capabilities is provided
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'wdaStartAttempted' logged at 1788051091305 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Selected 'existing-url' WebDriverAgent startup strategy
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Using provided WebdriverAgent at 'http://127.0.0.1:8100'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m JWProxy options: {"scheme":"http","server":"127.0.0.1","port":8100,"base":"","reqBasePath":"","sessionId":null,"keepAlive":true}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m NoSessionProxy options: {"scheme":"http","server":"127.0.0.1","port":8100,"base":"","reqBasePath":"","sessionId":null,"keepAlive":true}
+[38;5;166m[15322aa3][0m[38;5;151m[WD Proxy][0m NoSessionProxy options: {"scheme":"http","server":"127.0.0.1","port":8100,"base":"","reqBasePath":"","sessionId":null,"timeout":3000}
+[38;5;166m[15322aa3][0m[38;5;151m[WD Proxy][0m Matched '/status' to command name 'getStatus'
+[38;5;166m[15322aa3][0m[38;5;151m[WD Proxy][0m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[38;5;166m[15322aa3][0m[38;5;151m[WD Proxy][0m Got response with status 200: {"value":{"build":{"version":"16.8.0","time":"Aug 25 2026 19:09:23","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"},"os":{"testmanagerdVersion":65535,"name":"iOS","sdkVersion":"26.4","version":"26.6"},"device":"iphone","ios":{"ip":"10.137.142.243"},"message":"WebDriverAgent is ready to accept commands","state":"success","ready":true},"sessionId":null}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'wdaSessionAttempted' logged at 1788051091316 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Sending createSession command to WDA
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Matched '/session' to command name 'createSession'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":{"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66","capabilities":{"sdkVersion":"26.6","device":"iphone"}},"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Determined the downstream protocol as 'W3C'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m WDA session startup took 10ms
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'wdaSessionStarted' logged at 1788051091326 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m WebDriverAgent version: '16.8.0'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Event 'wdaStarted' logged at 1788051091327 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Forwarding MJPEG server port 9100 to local port 9100
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Requesting connection for device 00008140-001130441A2A801C on local port 9100, device port 9100
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Cached connections count: 1
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m RemoteXPC session initialization unavailable: Tunnel registry port not found. Please run the tunnel creation script first See https://appium.github.io/appium-xcuitest-driver/latest/guides/remotexpc-tunnels-real-devices/ Falling back to appium-ios-device.
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Using RemoteXPC usbmux strategy for '00008140-001130441A2A801C'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Successfully requested the connection for 00008140-001130441A2A801C:9100
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Initialized new IPC object with max object size of 1048576 bytes and max topics of 1000
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Unsubscribing e290d3f4-de4a-4805-b613-35deb180a9a0 from topic 'xcuitest:sessionUdidClaimed'
+[38;5;166m[15322aa3][0m[38;5;123m[BaseDriver][0m Subscribing e290d3f4-de4a-4805-b613-35deb180a9a0 to topic 'xcuitest:sessionUdidClaimed'
+[38;5;166m[15322aa3][0m[38;5;77m[AppiumDriver@f904][0m New XCUITestDriver session created successfully, session 15322aa3-4459-4717-8f38-d73c6125e237 added to master session list
+[38;5;166m[15322aa3][0m[38;5;77m[AppiumDriver@f904][0m Applying the initial values to Appium settings parsed from W3C caps: {"mjpegServerFramerate":60,"mjpegServerScreenshotQuality":100,"mjpegScalingFactor":50}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Matched '/appium/settings' to command name 'updateSettings'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /appium/settings] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/appium/settings] with body: {"settings":{"mjpegServerFramerate":60}}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":{"snapshotMaxDepth":50,"elementResponseAttributes":"type,label","autoClickAlertSelector":"","keyboardPrediction":0,"includeCustomActionsInPageSource":false,"waitForIdleTimeout":10,"animationCoolOffTimeout":2,"keyboardAutocorrection":0,"useFirstMatch":false,"mjpegFixOrientation":false,"screenshotQuality":3,"accessibilityDeadline":0,"dismissAlertButtonSelector":"","snapshotMaxChildren":2147483647,"mjpegServerScreenshotQuality":100,"activeAppDetectionPoint":"64.00,64.00","boundElementsByIndex":false,"screenshotOrientation":"auto","enforceCustomSnapshots":false,"acceptAlertButtonSelector":"","useClearTextShortcut":true,"includeNativeAccessibilityElementInPageSource":false,"defaultActiveApplication":"auto","limitXPathContextScope":true,"reduceMotion":false,"mjpegServerFramerate":60,"shouldUseCompactResponses":true,"mjpegScalingFactor":50,"defaultAlertAction":"","includeHittableInPageSource":false,"includeMinMaxValueInPageSource":false,"respectSystemAlerts":false,"maxTypingFrequency":60,"includeNativeFram???
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Matched '/appium/settings' to command name 'updateSettings'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /appium/settings] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/appium/settings] with body: {"settings":{"mjpegServerScreenshotQuality":100}}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":{"snapshotMaxDepth":50,"elementResponseAttributes":"type,label","autoClickAlertSelector":"","keyboardPrediction":0,"includeCustomActionsInPageSource":false,"waitForIdleTimeout":10,"animationCoolOffTimeout":2,"keyboardAutocorrection":0,"useFirstMatch":false,"mjpegFixOrientation":false,"screenshotQuality":3,"accessibilityDeadline":0,"dismissAlertButtonSelector":"","snapshotMaxChildren":2147483647,"mjpegServerScreenshotQuality":100,"activeAppDetectionPoint":"64.00,64.00","boundElementsByIndex":false,"screenshotOrientation":"auto","enforceCustomSnapshots":false,"acceptAlertButtonSelector":"","useClearTextShortcut":true,"includeNativeAccessibilityElementInPageSource":false,"defaultActiveApplication":"auto","limitXPathContextScope":true,"reduceMotion":false,"mjpegServerFramerate":60,"shouldUseCompactResponses":true,"mjpegScalingFactor":50,"defaultAlertAction":"","includeHittableInPageSource":false,"includeMinMaxValueInPageSource":false,"respectSystemAlerts":false,"maxTypingFrequency":60,"includeNativeFram???
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Matched '/appium/settings' to command name 'updateSettings'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /appium/settings] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/appium/settings] with body: {"settings":{"mjpegScalingFactor":50}}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":{"snapshotMaxDepth":50,"elementResponseAttributes":"type,label","autoClickAlertSelector":"","keyboardPrediction":0,"includeCustomActionsInPageSource":false,"waitForIdleTimeout":10,"animationCoolOffTimeout":2,"keyboardAutocorrection":0,"useFirstMatch":false,"mjpegFixOrientation":false,"screenshotQuality":3,"accessibilityDeadline":0,"dismissAlertButtonSelector":"","snapshotMaxChildren":2147483647,"mjpegServerScreenshotQuality":100,"activeAppDetectionPoint":"64.00,64.00","boundElementsByIndex":false,"screenshotOrientation":"auto","enforceCustomSnapshots":false,"acceptAlertButtonSelector":"","useClearTextShortcut":true,"includeNativeAccessibilityElementInPageSource":false,"defaultActiveApplication":"auto","limitXPathContextScope":true,"reduceMotion":false,"mjpegServerFramerate":60,"shouldUseCompactResponses":true,"mjpegScalingFactor":50,"defaultAlertAction":"","includeHittableInPageSource":false,"includeMinMaxValueInPageSource":false,"respectSystemAlerts":false,"maxTypingFrequency":60,"includeNativeFram???
+[38;5;166m[15322aa3][0m[38;5;77m[AppiumDriver@f904][0m Event 'newSessionStarted' logged at 1788051091355 (20:51:31 GMT-0400 (Eastern Daylight Time))
+[38;5;166m[15322aa3][0m[38;5;77m[AppiumDriver@f904][0m Promoting 1 sessionless plugins to be attached to session ID 15322aa3-4459-4717-8f38-d73c6125e237
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Cached the protocol value 'W3C' for the new session 15322aa3-4459-4717-8f38-d73c6125e237
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","automationName":"XCUITest","udid":"00008140-001130441A2A801C","webDriverAgentUrl":"http://127.0.0.1:8100","skipLogCapture":true,"plugins":["ocr"],"newCommandTimeout":0,"platformVersion":"26.6"}}
+[38;5;86m[HTTP][0m <-- POST /session 200 141 ms - 490
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> GET /session/15322aa3-4459-4717-8f38-d73c6125e237/screenshot 
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.getScreenshot() with args: ["15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'getScreenshot'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Taking screenshot with WDA
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Matched '/screenshot' to command name 'getScreenshot'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/screenshot] with no body
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":"iVBORw0KGgoAAAANSUhEUgAABLYAAAo+CAIAAAAd2FoqAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAABLagAwAEAAAAAQAACj4AAAAAILY37gAAAAlwSFlzAAALEwAACxMBAJqcGAAAABxpRE9UAAAAAgAAAAAAAAUfAAAAKAAABR8AAAUfAAG/B9Xy5r0AAEAASURBVHgB7L2Hdx3Jda/rd/2u7Xuvw5UtyVm29RwkW5ajLMnyWLKlkaw4mhykGXJmOJnDYc4Ec0QgSBAASZAgMpEDkXMGDnIGExgmB02Q/oP3w3S72ejuExAJHH5r9cKq06iurvq6DlC/3rv2/qXxX1zngAAEIAABCEAAAhCAAAQgAAEIiMAvQQECEIAABCAAAQhAAAIQgAAEIGAQQCJiRIUABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAAAIQgIBJAInIVIAABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAA???
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABLYAAAo+CAIAAAAd2FoqAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAABLagAwAEAAAAAQAACj4AAAAAILY37gAAAAlwSFlzAAALEwAACxMBAJqcGAAAABxpRE9UAAAAAgAAAAAAAAUfAAAAKAAABR8AAAUfAAG/B9Xy5r0AAEAASURBVHgB7L2Hdx3Jda/rd/2u7Xuvw5UtyVm29RwkW5ajLMnyWLKlkaw4mhykGXJmOJnDYc4Ec0QgSBAASZAgMpEDkXMGDnIGExgmB02Q/oP3w3S72ejuExAJHH5r9cKq06iurvq6DlC/3rv2/qXxX1zngAAEIAABCEAAAhCAAAQgAAEIiMAvQQECEIAABCAAAQhAAAIQgAAEIGAQQCJiRIUABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAAAIQgIBJAInIVIAABCAAAQhAAAIQgAAEIAABkwASkakAAQhAAAIQgAAEIAABCEAAAiYBJCJTAQIQgAAEIAABCEAAAhCAAARMAkhEpgIEIAABCEAAAhCAAAQgAAEImASQiEwFCEAAAhCAAAQgAAEIQAACEDAJIBGZChCAAAQgAAEIQAACEIAABCBgEkAiMhUgAAEIQAACEIAABCAAAQhAwCSARGQqQAACEIAABCAAAQhAAAIQgIBJAI???
+[38;5;86m[HTTP][0m <-- GET /session/15322aa3-4459-4717-8f38-d73c6125e237/screenshot 200 188 ms - 267636
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"168.0","y":"345.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"168.0","y":"345.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"168.0","y":"345.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 661 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"242.0","y":"404.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"242.0","y":"404.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"242.0","y":"404.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 411 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"413.6666666666667"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"413.6666666666667"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"91.33333333333333","y":"413.6666666666667"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 415 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"250.33333333333334","y":"412.6666666666667"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"250.33333333333334","y":"412.6666666666667"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"250.33333333333334","y":"412.6666666666667"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 427 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"92.33333333333333","y":"547.3333333333334"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"92.33333333333333","y":"547.3333333333334"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"92.33333333333333","y":"547.3333333333334"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 419 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"447.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"447.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"91.33333333333333","y":"447.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 427 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"100.0","y":"447.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"100.0","y":"447.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"100.0","y":"447.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 436 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"99.66666666666667","y":"473.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"99.66666666666667","y":"473.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"99.66666666666667","y":"473.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 435 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"108.33333333333333","y":"506.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"108.33333333333333","y":"506.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"108.33333333333333","y":"506.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 537 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"556.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"556.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"91.33333333333333","y":"556.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 429 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"100.0","y":"556.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"100.0","y":"556.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"100.0","y":"556.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 437 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"57.666666666666664","y":"580.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"57.666666666666664","y":"580.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"57.666666666666664","y":"580.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 414 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"66.33333333333333","y":"571.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"66.33333333333333","y":"571.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"66.33333333333333","y":"571.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 413 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"75.66666666666667","y":"581.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"75.66666666666667","y":"581.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"75.66666666666667","y":"581.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 409 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"91.33333333333333","y":"624.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"91.33333333333333","y":"624.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"91.33333333333333","y":"624.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 667 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"75.66666666666667","y":"631.3333333333334"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"75.66666666666667","y":"631.3333333333334"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"75.66666666666667","y":"631.3333333333334"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 421 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"158.66666666666666","y":"647.3333333333334"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"158.66666666666666","y":"647.3333333333334"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"158.66666666666666","y":"647.3333333333334"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 415 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"83.0","y":"529.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"83.0","y":"529.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"83.0","y":"529.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 405 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"117.66666666666667","y":"513.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"117.66666666666667","y":"513.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"117.66666666666667","y":"513.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 411 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"109.33333333333333","y":"522.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"109.33333333333333","y":"522.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"109.33333333333333","y":"522.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 410 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"159.66666666666666","y":"555.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"159.66666666666666","y":"555.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"159.66666666666666","y":"555.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 537 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"167.33333333333334","y":"647.3333333333334"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"167.33333333333334","y":"647.3333333333334"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"167.33333333333334","y":"647.3333333333334"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 421 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"158.66666666666666","y":"630.3333333333334"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"158.66666666666666","y":"630.3333333333334"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"158.66666666666666","y":"630.3333333333334"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 533 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"58.0","y":"420.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.0","y":"420.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"58.0","y":"420.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 407 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"108.33333333333333","y":"565.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"108.33333333333333","y":"565.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"108.33333333333333","y":"565.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 422 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"158.66666666666666","y":"613.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"158.66666666666666","y":"613.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"158.66666666666666","y":"613.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 411 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"126.0","y":"606.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"126.0","y":"606.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"126.0","y":"606.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 429 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"58.0","y":"386.6666666666667"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"58.0","y":"386.6666666666667"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"58.0","y":"386.6666666666667"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 421 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"126.0","y":"412.6666666666667"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"126.0","y":"412.6666666666667"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"126.0","y":"412.6666666666667"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 527 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"126.0","y":"396.0"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"126.0","y":"396.0"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"126.0","y":"396.0"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 399 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"176.66666666666666","y":"513.6666666666666"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"176.66666666666666","y":"513.6666666666666"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"176.66666666666666","y":"513.6666666666666"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 417 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"74.66666666666667","y":"497.6666666666667"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"74.66666666666667","y":"497.6666666666667"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"74.66666666666667","y":"497.6666666666667"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 427 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"167.0","y":"504.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"167.0","y":"504.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"167.0","y":"504.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 416 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"185.0","y":"404.3333333333333"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"185.0","y":"404.3333333333333"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"185.0","y":"404.3333333333333"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 399 ms - 14
+[38;5;166m[15322aa3][0m[38;5;86m[HTTP][0m --> POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync {"script":"mobile: tap","args":[{"x":"66.33333333333333","y":"369.6666666666667"}]}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Calling AppiumDriver.execute() with args: ["mobile: tap",[{"x":"66.33333333333333","y":"369.6666666666667"}],"15322aa3-4459-4717-8f38-d73c6125e237"]
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Executing command 'execute'
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying to WDA with an unknown route: POST /wda/tap
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Proxying [POST /wda/tap] to [POST http://127.0.0.1:8100/session/8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66/wda/tap] with body: {"x":"66.33333333333333","y":"369.6666666666667"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Got response with status 200: {"value":null,"sessionId":"8B3DD4D8-1C38-4F1B-A3AF-9B2B156B6D66"}
+[38;5;166m[15322aa3][0m[38;5;85m[XCUITestDriver@e290][0m Responding to client with driver.execute() result: null
+[38;5;86m[HTTP][0m <-- POST /session/15322aa3-4459-4717-8f38-d73c6125e237/execute/sync 200 392 ms - 14
